@@ -393,6 +393,7 @@ module MhOpsworksRecipes
           mode '644'
           content lazy { ::File.read(source_file) }
           action :create
+          ignore_failure true
         end
       end
     end
