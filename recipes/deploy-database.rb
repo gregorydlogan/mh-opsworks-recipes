@@ -22,7 +22,7 @@ deploy_action = get_deploy_action
 deploy_revision "matterhorn" do
   deploy_to matterhorn_repo_root
   repo repo_url
-  revision git_data.fetch(:revision, 'master')
+  revision git_data.fetch(:revision, 't/MATT-1032-job-scaling-rebase')
   enable_submodules true
 
   user 'matterhorn'
